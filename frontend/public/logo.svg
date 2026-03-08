@@ -1,0 +1,37 @@
+<svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="sGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1CB5E0;stop-opacity:1" />
+      <stop offset="30%" style="stop-color:#2563EB;stop-opacity:1" />
+      <stop offset="70%" style="stop-color:#4338CA;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#7C3AED;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- S Letter with exact curves -->
+  <path d="M60 40 C60 25 75 25 90 25 L140 25 C155 25 155 40 155 40 C155 55 140 55 140 55 L100 55 C85 55 85 70 85 70 C85 85 100 85 100 85 L140 85 C155 85 155 100 155 100 C155 115 140 115 140 115 L90 115 C75 115 75 130 75 130 C75 145 90 145 90 145 L140 145 C155 145 155 160 155 160 C155 175 140 175 140 175 L90 175 C75 175 60 160 60 160 L60 40 Z" 
+        fill="url(#sGradient)"/>
+  
+  <!-- White curved sections inside S -->
+  <ellipse cx="120" cy="65" rx="25" ry="15" fill="white" opacity="0.9"/>
+  <ellipse cx="110" cy="135" rx="25" ry="15" fill="white" opacity="0.9"/>
+  
+  <!-- Detailed sneaker design -->
+  <g transform="translate(85, 55)">
+    <!-- Shoe sole -->
+    <path d="M5 20 C5 15 10 10 20 10 L40 10 C50 10 55 15 55 20 L60 25 C65 30 60 35 55 35 L50 40 C45 45 35 45 20 45 C10 45 5 40 5 35 L5 20 Z" 
+          fill="white" stroke="#2563EB" stroke-width="2"/>
+    
+    <!-- Shoe upper -->
+    <path d="M10 15 C15 10 25 8 35 10 C45 12 50 18 52 25 C50 20 45 15 35 15 C25 15 15 18 10 20" 
+          fill="none" stroke="#2563EB" stroke-width="2"/>
+    
+    <!-- Shoe laces -->
+    <path d="M20 12 L25 18 M30 12 L35 18 M25 15 L35 15" 
+          stroke="#2563EB" stroke-width="1.5" stroke-linecap="round"/>
+    
+    <!-- Shoe details -->
+    <path d="M15 25 C20 22 30 22 40 25 C45 27 50 30 45 32 C40 30 30 30 20 32 C15 30 15 27 15 25" 
+          fill="none" stroke="#2563EB" stroke-width="1.5"/>
+  </g>
+</svg>

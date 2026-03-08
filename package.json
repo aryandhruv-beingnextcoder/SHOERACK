@@ -1,0 +1,22 @@
+{
+  "name": "shoerack",
+  "version": "1.0.0",
+  "description": "Full-stack e-commerce website for selling shoes",
+  "scripts": {
+    "cleanup-ports": "./cleanup-ports.sh",
+    "dev": "./cleanup-ports.sh && concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd backend && npm run dev",
+    "client": "cd frontend && npm start",
+    "install-deps": "cd backend && npm install && cd ../frontend && npm install",
+    "seed": "cd backend && node seed.js",
+    "start": "npm run seed && npm run dev",
+    "setup": "npm run install-deps && npm run seed",
+    "create-admin": "cd backend && node createAdmin.js",
+    "sync-start": "npm run install-deps && npm run seed && npm run dev",
+    "check-sync": "cd backend && node -e \"console.log('✅ Sync dependencies ready')\"",
+    "check-products": "cd backend && node -e \"const mongoose = require('mongoose'); require('dotenv').config(); const Product = require('./models/Product'); mongoose.connect(process.env.MONGODB_URI).then(async () => { const count = await Product.countDocuments(); console.log(`Total products: ${count}`); process.exit(); });\""
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
