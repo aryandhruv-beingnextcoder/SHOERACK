@@ -3,4 +3,5 @@ node_modules/
 backend/uploads/
 *.log
 .DS_Store
-node_modules
+*.zip
+*.bat
